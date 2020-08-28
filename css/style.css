@@ -1,0 +1,72 @@
+*{
+  list-style: none;
+}
+:root{
+    --personal: #ff7200;
+  }
+
+  header{
+    font-family: 'Delius Unicase', cursive;
+  }
+
+  header .titulo{
+    background: rgba(255,255,255,.7);
+  }
+
+  header .titulo h1, .bg-light a:hover, .precio{
+    color: var(--personal)!important;
+  }
+
+  h2{
+    background:var(--personal);
+    color:#fff;
+    font-family: 'Delius Unicase', cursive;
+    transition: step-end .5s;
+  }
+
+  a {
+    text-decoration: none !important;
+  }
+
+  h3, label, .articulo {
+    font-family: 'Quicksand', sans-serif;
+  }
+
+  .submenu {
+    position: absolute;
+    top:100%;
+    display: none;
+  }
+  
+  .submenu .submenu {
+    top: 0;
+    left: 100%;
+  }
+  
+  .menu-item {
+    position: relative;
+  }
+
+  .menu-item:hover > .submenu{
+    background: rgba(255,255,255,.9);
+    color: var(--personal);
+    display: block;
+    border-radius: 10px;
+  }
+
+  .btnOrange{
+    background:var(--personal);
+    border:1px solid var(--personal);
+    border-radius: 15px;
+  }
+
+  .btnWhats{
+    width: 70px;
+    bottom: 20px;
+    right: 20px;
+  }
+  @media (max-width: 767px){
+    div.menu {
+      text-align: center !important;
+    }
+  }
